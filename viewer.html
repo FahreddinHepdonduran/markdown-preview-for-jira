@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown Preview</title>
+<link rel="stylesheet" href="src/viewer.css">
+<link rel="stylesheet" href="vendor/katex.min.css">
+</head>
+<body class="mdp-loading">
+  <header class="topbar">
+    <div class="file">
+      <span class="badge">MD</span>
+      <span class="filename" id="filename">document.md</span>
+      <a class="source" id="source" target="_blank" rel="noopener" hidden>source</a>
+    </div>
+    <div class="actions">
+      <button class="btn icon" id="btn-toc" title="Table of contents" aria-pressed="false">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h2v2H2zM6 3.75h8v1.5H6zM2 7h2v2H2zM6 7.25h8v1.5H6zM2 10.5h2v2H2zM6 10.75h8v1.5H6z"/></svg>
+      </button>
+      <div class="sep"></div>
+      <button class="btn icon" id="btn-smaller" title="Smaller text">A<span class="sub">−</span></button>
+      <button class="btn icon" id="btn-bigger" title="Larger text">A<span class="sub">+</span></button>
+      <button class="btn icon" id="btn-theme" title="Toggle theme">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 1.5v11a5.5 5.5 0 010-11z"/></svg>
+      </button>
+      <div class="sep"></div>
+      <button class="btn" id="btn-copy" title="Copy the raw markdown">Copy</button>
+      <button class="btn" id="btn-export" title="Download as a standalone HTML file">Export</button>
+      <button class="btn icon" id="btn-print" title="Print">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1h8v3H4zM2 5h12a1 1 0 011 1v5a1 1 0 01-1 1h-2V9H4v3H2a1 1 0 01-1-1V6a1 1 0 011-1zm3 5h6v5H5z"/></svg>
+      </button>
+      <button class="btn icon embed-only" id="btn-popout" title="Open in a new tab">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 1h6v6h-1.5V3.56L7.53 9.53 6.47 8.47l5.97-5.97H9zM2 3h5v1.5H3.5v8h8V9H13v5H2z"/></svg>
+      </button>
+      <button class="btn icon embed-only close" id="btn-close" title="Close (Esc)">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.28 3.22 8 6.94l3.72-3.72 1.06 1.06L9.06 8l3.72 3.72-1.06 1.06L8 9.06l-3.72 3.72-1.06-1.06L6.94 8 3.22 4.28z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" id="toc" hidden aria-label="Table of contents"></nav>
+    <main class="reader" id="reader">
+      <article class="markdown-body" id="content"></article>
+      <footer class="docfoot" id="docfoot"></footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="vendor/mdp-bundle.js"></script>
+  <script src="src/viewer.js"></script>
+</body>
+</html>

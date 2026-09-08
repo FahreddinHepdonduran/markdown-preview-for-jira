@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown Preview for Jira — Settings</title>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body class="options">
+  <main class="page">
+    <header class="page-head">
+      <span class="badge">MD</span>
+      <h1>Markdown Preview for Jira</h1>
+    </header>
+
+    <section class="card">
+      <h2>Reading</h2>
+      <label class="field">
+        <span>Theme</span>
+        <select id="theme">
+          <option value="">Follow system</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Base text size</span>
+        <span class="range">
+          <input type="range" id="font-size" min="12" max="22" step="1">
+          <output id="font-size-out"></output>
+        </span>
+      </label>
+      <label class="toggle">
+        <input type="checkbox" id="toc-open">
+        <span>
+          <strong>Show the table of contents by default</strong>
+          <em>Toggle it any time with Ctrl/Cmd + \</em>
+        </span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>Attachment access</h2>
+      <p class="muted">
+        The extension reads your Jira sites only
+        (<code>*.atlassian.net</code>, <code>*.atlassian.com</code>, <code>*.jira.com</code>).
+        Some Jira configurations serve attachment downloads from a different host —
+        a customer S3 bucket, for instance. If a preview fails with
+        <em>“Chrome blocked the download”</em>, turn this on.
+      </p>
+      <label class="toggle">
+        <input type="checkbox" id="broad-access">
+        <span>
+          <strong>Allow reading attachment downloads from any host</strong>
+          <em>Only used to fetch the .md file you asked to preview. Off by default; you can revoke it here at any time.</em>
+        </span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>Shortcuts</h2>
+      <dl class="shortcuts">
+        <dt>Alt + Shift + M</dt><dd>Open the markdown attachment on this issue</dd>
+        <dt>Esc</dt><dd>Close the preview</dd>
+        <dt>Ctrl / Cmd + \</dt><dd>Toggle the table of contents</dd>
+      </dl>
+      <p class="muted">Change the keyboard shortcut at <code>chrome://extensions/shortcuts</code>.</p>
+    </section>
+
+    <p class="foot-note muted">
+      Not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd.
+    </p>
+
+    <p class="saved" id="saved">Saved</p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

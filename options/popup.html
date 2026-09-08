@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Markdown Preview for Jira</title>
+<link rel="stylesheet" href="ui.css">
+</head>
+<body class="popup">
+  <header class="pop-head">
+    <span class="badge">MD</span>
+    <strong>Markdown Preview for Jira</strong>
+  </header>
+
+  <section class="pop-body">
+    <div id="found" class="found" hidden>
+      <p class="label" id="found-label"></p>
+      <div id="found-list" class="list"></div>
+    </div>
+    <p class="empty" id="empty">Open a Jira issue that has a <code>.md</code> attachment. A pill appears in the bottom-right corner — click it to read the file.</p>
+  </section>
+
+  <footer class="pop-foot">
+    <span class="hint">Alt + Shift + M opens it too</span>
+    <button class="link" id="open-options" type="button">Settings</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
