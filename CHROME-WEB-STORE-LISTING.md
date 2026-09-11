@@ -75,6 +75,19 @@ Open source — the full source is linked below.
 Not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd.
 ```
 
+**Additional fields**
+
+| Field | Value |
+|---|---|
+| Official URL | Leave as `None`. That dropdown only offers domains verified under your own account in Google Search Console. A GitHub URL can't go there — the domain isn't yours to verify. It only affects a "verified publisher" badge, nothing about review or ranking. |
+| Homepage URL | `https://github.com/FahreddinHepdonduran/markdown-preview-for-jira` |
+| Support URL | `https://github.com/FahreddinHepdonduran/markdown-preview-for-jira/issues` |
+| Mature content | Off |
+
+The support URL has to actually work: `PRIVACY.md` tells users to open an issue, so that is the
+contact path of record. Check that issue creation is open to the public — GitHub can restrict it to
+collaborators, and if it is restricted, users who follow the privacy policy hit a dead end.
+
 ---
 
 ## 2. Graphic assets
@@ -189,7 +202,7 @@ private window to confirm.
 - [ ] Name, summary, and version in the dashboard match `manifest.json`
 - [ ] One screenshot set — all light or all dark, not a mix
 - [ ] No collection checkbox ticked; all three certifications ticked
-- [ ] Support and homepage URLs point at the repository
+- [ ] Support and homepage URLs point at the repository, and issue creation is open to the public
 - [ ] Visibility set the way you want it. Unlisted first is a reasonable way to see the listing before
       anyone else does; you can switch to public later without a new review.
 
