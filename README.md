@@ -61,7 +61,7 @@ redirect while carrying your session), and renders the result in an overlay.
 | `*://*/*` — **optional, off by default** | Only for Jira instances that store attachment downloads on a non-Atlassian host. Enable it in settings if a preview fails with *"Chrome blocked the download"*; revoke it in the same place. |
 
 Nothing is collected and nothing leaves your browser. Every library is vendored in
-`vendor/` — no remote code, no analytics. See `store/PRIVACY.md`.
+`vendor/` — no remote code, no analytics. See [PRIVACY.md](PRIVACY.md).
 
 ## Layout
 
@@ -84,7 +84,9 @@ vendor/
   katex.min.js/.css    loaded lazily, only when a document has math
   fonts/               KaTeX woff2
 build/bundle-entry.js  source for vendor/mdp-bundle.js
+icons/                 extension icons (mark-full.svg / mark-compact.svg are the sources)
 screenshots/           1280x800 captures, also used by the Web Store listing
+store-assets/          Chrome Web Store promo tiles (440x280, 1400x560)
 testfixtures/sample.md exercises every feature — handy while developing
 PRIVACY.md             the privacy policy linked from the Web Store listing
 LICENSE                MIT

@@ -1,6 +1,6 @@
 ---
 title: Payment Service — Migration Notes
-author: Fahri
+author: platform-team
 status: in review
 ---
 
