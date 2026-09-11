@@ -89,6 +89,7 @@ screenshots/           1280x800 captures, also used by the Web Store listing
 store-assets/          Chrome Web Store promo tiles (440x280, 1400x560)
 testfixtures/sample.md exercises every feature — handy while developing
 PRIVACY.md             the privacy policy linked from the Web Store listing
+CHROME-WEB-STORE-LISTING.md  listing copy, permission justifications, submission checklist
 LICENSE                MIT
 ```
 
